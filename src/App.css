@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  boxing-sizing: border-box; 
+  box-sizing: border-box; 
 } 
 
 body{
@@ -35,17 +35,3 @@ body{
   font-weight: 400;
   margin-top: 20px;
 }
-
-.navbar{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.navbar__text{
-  display: flex;
-  height: 60px;
-  align-items: center;
-}
-

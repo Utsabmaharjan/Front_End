@@ -1,19 +1,44 @@
-import React from 'react'
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
 
 const navbar = () => {
   return (
-    <nav className='navbar'>
-      <div className='navbar__text'>
-       <ul>
-        <li><a href=''>Home</a></li>
-        <li><a href=''>Upload</a></li>
-        <li><a href=''>Login</a></li>
-        <li><a href=''>Register</a></li>
-        <li><a href=''>contacct</a></li>
-       </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        Navbar
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Home <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Features
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Pricing
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default navbar
+export default navbar;
